@@ -16,36 +16,39 @@ cd version01/
 ```
 
 · 2) Construcción de la imagen de la app:
+Se usa el fichero "Dockerfile" del DIR "flask-app/" para generar la imagen de la app de python/flask.
 ```sh
 cd flask-app/
 sudo docker image build .
 sudo docker compose build
 cd ..
 ```
-Eso usará el fichero "Dockerfile" del DIR "flask-app/" para generar la imagen de la app de python/flask
 
 · 3) Composición del microservicio:
+Se usa el fichero "docker-compose.yml" de la ruta base del proyecto para componser los servicios (app y BDD).
 ```sh
 sudo docker compose build
 ```
-Eso usará el fichero "docker-compose.yml" de la ruta base del proyecto para componser los servicios (app y BDD).
 
 · 4) Arranque del microservicio:
+Se pretende que se arranquen los 2 contenedores, y que la app quede escuchando por el puerto interno indicado por configuración (ahora el 6002), pero expuesto hacia afuera por el 5000.
+Se han usado 2 puertos distintos con intención didáctica.
 ```sh
 sudo docker compose up
 ```
-El resultado es que se arrancan los contenedores, y la app estará escuchando por el puerto interno indicado por configuración (ahora el 6002), pero expuesto hacia afuera por el 5000. 
+
 
 ## Ejemplo para testeo
 
-· Desde otra terminal/consola:
+* Desde otra terminal/consola:
 ```sh
 curl http://localhost:5000/increment
 ```
 Eso debe devolver un pequeño JSON conteniendo solo un objeto con la propiedad "count" y el valor correspondiente. 
 Ej. de objeto devuelto: {"count":305}
 
-· Comando Linux que ayuda a ver el funcionamiento en tiempo real, haciendo peticiones cada 1 seg.:
+
+* Comando Linux que ayuda a ver el funcionamiento en tiempo real, haciendo peticiones cada 1 seg.:
 ```sh
 watch -n1 'curl http://localhost:5000/increment'
 ```
