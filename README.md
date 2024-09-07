@@ -13,6 +13,7 @@ Linux, y Windows con Docker-Desktop:
 · 1) Nos posicionamos en la ruta base del proyecto:
 ```sh
 cd version01/
+. .env
 ```
 
 · 2) Construcción de la imagen de la app:
