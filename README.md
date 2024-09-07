@@ -56,8 +56,8 @@ watch -n1 'curl http://localhost:5000/increment'
 
 ## Meta
 
-Autor: Alfonso Orego
-E-mail: alfonso.orego.moreno@gmail.com
-Ruta pública al Repo: https://github.com/AlfonsoOregoMoreno/practica-Docker
+* Autor: Alfonso Orego
+* E-mail: alfonso.orego.moreno@gmail.com
+* Ruta pública al Repo: https://github.com/AlfonsoOregoMoreno/practica-Docker
 
 
