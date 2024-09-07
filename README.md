@@ -3,8 +3,8 @@
 Práctica correspondiente al Módulo de Docker del Bootcamp DevOps-10 de Keepcoding.
 
 Se compone de 2 contenedores: 
-· uno con una app en python/flask, que levanta un server HTTP escuchando peticiones GET por el end-point "/increment", a modo de contador de visitas.
-· otro con una BDD postgres donde se almacena el contador de visitas.
+* uno con una app en python/flask, que levanta un server HTTP escuchando peticiones GET por el end-point "/increment", a modo de contador de visitas.
+* otro con una BDD postgres donde se almacena el contador de visitas.
 
 ## Instalación
 
