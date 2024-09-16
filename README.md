@@ -21,7 +21,6 @@ Se usa el fichero "Dockerfile" del DIR "flask-app/" para generar la imagen de la
 ```sh
 cd flask-app/
 sudo docker image build .
-sudo docker compose build
 cd ..
 ```
 
